@@ -1,11 +1,6 @@
 const express = require('express')
 const app = express()
 
-//GET / HTTP/1.1
-app.get('/', (request, response) => {   
-    response.send('Home Page! GET...')
-})
-
 // GET /products/all HTTP/1.1
 app.get('/products/all', (request, response) => {   
     const page = 2;
